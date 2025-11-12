@@ -85,19 +85,6 @@ function InnerTabs() {
         }}
       />
       <Tabs.Screen
-        name="communication"
-        options={{
-          title: t("communication.title"),
-          tabBarIcon: ({ color }) => (
-            <Ionicons
-              name="chatbubble-ellipses-outline"
-              color={color}
-              size={22}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="profile"
         options={{
           title: t("profile.title"),

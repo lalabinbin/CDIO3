@@ -143,6 +143,7 @@ export default function HomeScreen() {
             </Text>
             <TouchableOpacity
               style={[styles.startButton, { backgroundColor: colors.primary }]}
+              onPress={() => router.push("/(tabs)/lesson")}
             >
               <Text style={styles.startText}>{t("home.startLearning")}</Text>
             </TouchableOpacity>

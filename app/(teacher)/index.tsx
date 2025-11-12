@@ -171,19 +171,6 @@ export default function TeacherDashboard() {
               {t("dashboard.createAndGrade")}
             </Text>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.extraBox, { backgroundColor: colors.surface }]}
-            onPress={() => router.push("/communication")}
-          >
-            <Ionicons name="chatbubbles-outline" size={26} color="#805AD5" />
-            <Text style={[styles.extraTitle, { color: colors.text }]}>
-              {t("dashboard.communication")}
-            </Text>
-            <Text style={[styles.extraSub, { color: colors.textSecondary }]}>
-              {t("dashboard.chatAndQnA")}
-            </Text>
-          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>

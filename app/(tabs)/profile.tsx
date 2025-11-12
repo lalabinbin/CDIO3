@@ -90,7 +90,7 @@ export default function ProfileScreen() {
     }
 
     try {
-      const users = JSON.parse(await AsyncStorage.getItem("currentUser"));
+      const users = JSON.parse(await AsyncStorage.getItem("users")) || [];
       const updatedUsers = users.map((u: any) =>
         u.email === user.email && u.password === oldPassword
           ? { ...u, password: newPassword }
@@ -119,7 +119,7 @@ export default function ProfileScreen() {
 
   const handleSaveProfile = async () => {
     try {
-      const users = JSON.parse(await AsyncStorage.getItem("currentUser"));
+      const users = JSON.parse(await AsyncStorage.getItem("users")) || [];
       const updatedUsers = users.map((u: any) =>
         u.email === user.email ? { ...u, userName: name, email } : u
       );
